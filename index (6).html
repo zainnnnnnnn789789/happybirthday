@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Eshal & Meerub</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffdee9, #b5fffc);
+      overflow-x: hidden;
+      color: #333;
+      position: relative;
+      min-height: 100vh;
+    }
+    header, footer {
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.6);
+      font-weight: bold;
+      user-select: none;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 120px);
+      padding: 10px 20px;
+      position: relative;
+      text-align: center;
+      z-index: 1;
+    }
+    .slide {
+      display: none;
+      animation: fadeIn 1s ease-in-out;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .slide.active {
+      display: block;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff69b4;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    button:hover {
+      background-color: #ff3cac;
+    }
+    img {
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .emoji-loop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .emoji {
+      position: absolute;
+      font-size: 24px;
+      animation: float 10s linear infinite;
+      user-select: none;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      header, footer {
+        font-size: 1.2rem;
+        padding: 12px 10px;
+      }
+      .container {
+        height: auto;
+        padding: 10px 15px;
+      }
+      .slide {
+        max-width: 90vw;
+        font-size: 1rem;
+      }
+      button {
+        font-size: 1rem;
+        padding: 10px 25px;
+        border-radius: 20px;
+      }
+    }
+
+    /* Small circular video style */
+    #small-video {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.7);
+      z-index: 1000;
+      border: 4px solid #ff69b4;
+      background: #fff;
+    }
+    #small-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    #unmute-btn {
+      position: fixed;
+      bottom: 150px;
+      right: 20px;
+      z-index: 1001;
+      padding: 8px 14px;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff69b4;
+      font-size: 1rem;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    #unmute-btn:hover {
+      background-color: #ff3cac;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🎉 Happy Birthday Eshal & Meerub 🎂
+  </header>
+
+  <div class="container">
+    <div class="slide active">
+      <p>
+        Hooray! Today is little Eshal's big day! 🎈🎂 The balloons are flying, the cake is ready, and everyone is singing, “Happy Birthday, Eshal!” 🎊💖 You’re the cutest little star in the sky, shining bright with your smile! 🌟 May your day be filled with giggles, hugs, chocolates, and lots of surprises! 🍭🧸 Always stay as sweet and lovely as you are. 🥰 We all love you sooo much, little princess! 👑💫 Have the best birthday ever with lots of joy, toys, and fairy magic! 🦄🎁
+      </p>
+    </div>
+
+    <div class="slide">
+      <p>
+        Yayyy! It’s Meerub’s birthday today! 🎉🎂 Time for cake, candles, and happy songs! 🎶💖 Our sweet little doll is growing up so fast! 🧁🧸 You are a bundle of joy wrapped in sunshine and smiles! 🌞✨ We wish you a day full of fun, candies, balloons, and fairy dust! 🎈🍬 May you always laugh, play, and dream big like a true little star! 🌟👧 Sending you big hugs and sparkly wishes, birthday girl! 💕🎁 Happy Birthday, Meerub — stay magical and adorable forever! 🦋👑
+      </p>
+    </div>
+
+    <div class="slide">
+      <img src="https://assets.onecompiler.app/43jkheyc6/43jkgsquu/WhatsApp%20Image%202025-05-23%20at%203.04.21%20AM.jpeg" alt="Eshal & Meerub Baby Photo" />
+    </div>
+
+    <button onclick="nextSlide()">Next Slide ➡️</button>
+  </div>
+
+  <footer>
+    💌 From Queen Arooj 💖
+  </footer>
+
+  <div class="emoji-loop" id="emojis"></div>
+
+  <!-- Small circular video -->
+  <div id="small-video">
+    <video autoplay muted loop playsinline>
+      <source src="SSYouTube.online_HAPPY Birthday Song, Happy Birthday to You_480p.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <button id="unmute-btn">🔊 Unmute Video</button>
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function nextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+
+    // Emoji animation
+    const emojiList = ['🎉', '🎊', '🎂', '🎁', '🎈', '🥳'];
+    const emojiContainer = document.getElementById('emojis');
+
+    function createEmoji() {
+      const emoji = document.createElement('div');
+      emoji.className = 'emoji';
+      emoji.innerText = emojiList[Math.floor(Math.random() * emojiList.length)];
+      emoji.style.left = Math.random() * 100 + 'vw';
+      emoji.style.fontSize = (18 + Math.random() * 24) + 'px';
+      emoji.style.animationDuration = 5 + Math.random() * 5 + 's';
+      emojiContainer.appendChild(emoji);
+
+      setTimeout(() => emoji.remove(), 10000);
+    }
+
+    setInterval(createEmoji, 300);
+
+    // Unmute button functionality for HTML5 video
+    const unmuteBtn = document.getElementById('unmute-btn');
+    const video = document.querySelector('#small-video video');
+
+    unmuteBtn.addEventListener('click', () => {
+      if (video) {
+        video.muted = false;
+        video.play();
+        unmuteBtn.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
